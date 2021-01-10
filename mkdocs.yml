@@ -1,0 +1,109 @@
+site_name: Name of the website
+site_description: Description of the website
+site_author: Website author
+site_url: https://localhost
+copyright: Company copyright
+
+# site_favicon: images/lightbulb/favicon.ico
+
+# repository information
+repo_url: https://github.com/almostengr/robinsonservices
+repo_name: Github
+remote_name: origin
+remote_branch: website
+
+# Development server details
+dev_addr: 192.168.57.117:8081
+
+# Appearance
+theme:
+  name: null
+  custom_dir: 'theme'
+  language: en
+  static_templates:
+    - 404.html
+    - 500.html
+  # extracss: []
+  # extrajs: []
+  # sitemessage
+    # - heading: heading
+    #   detail: detail
+    #   bgcolor: bg-primary
+    #   textcolor: text-light
+  # homemessage:
+  #   - heading: heading 
+  #     detail: detail
+  #     bgcolor: bg-primary
+  #     textcolor: text-light
+  jumbotron:
+    - heading: heading
+      detail: detail
+      url: #
+      background_image: "/images/jumbotron.jpg"
+      textcolor: text-warning
+      buttoncolor: btn-warning 
+  mainnav:
+    bgcolor: bg-dark
+    linkcolor: text-white
+    buttoncolor: btn-warning
+    links:
+    - url: /about
+      name: About
+      button: false
+    - url: /contact
+      name: Contact
+      button: false
+  featurette:
+    - heading: heading
+      description: Description
+      buttonlink: "#"
+      imageurl: "#"
+      bgcolor: bg-light
+      textcolor: text-dark
+  promotions:
+    - heading: heading
+      detail: detail
+      buttoncolor: btn-dark-gray
+      buttontext: Request Services
+      buttonlink: /contact
+      bgcolor: bg-warning
+      textcolor: text-dark
+  subfooter:
+    - bgcolor: bg-dark
+      textcolor: text-white
+      headercolor: text-warning
+      columns:
+      - heading: About RHTS
+        links:
+          - url: "https://rhtservices.net"
+            name: "rhtservices.net"
+            icon: fas fa-globe-africa
+      - heading: Service Areas
+        links:
+          - name: Montgomery, Alabama
+      - heading: "Other Links"
+        links:
+          - name: Privacy Policy
+            url: /privacy
+            icon: fas fa-user-secret
+          - name: Sitemap
+            url: /sitemap.xml
+            icon: fas fa-sitemap
+  footer:
+    - bgcolor: bg-black
+      textcolor: text-warning
+      # links:
+      # - url: "linkurl"
+      #   name: "linkname"
+
+use_directory_urls: true
+strict: false
+
+plugins:
+  - search:
+      lang: en
+  - minify:
+      minify_html: true
+
+extra:
+  generator: false
