@@ -60,6 +60,7 @@ theme:
       imageurl: "#"
       bgcolor: bg-light
       textcolor: text-dark
+      buttontext: ""
   promotions:
     - heading: heading
       detail: detail
