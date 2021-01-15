@@ -118,8 +118,8 @@
       {% endfor %}
     </div>
   </nav>
-
-  <main role="main" class="bg-light">
+  
+  <main role="main" class="{{ config.theme.main.bgcolor }}">
 
     {% for message in config.theme.sitemessage %}
     <section class="{{ message.bgcolor }} {{ message.textcolor }} py-4 sitemessage">
