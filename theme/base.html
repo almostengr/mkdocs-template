@@ -171,7 +171,11 @@
           <div class="col-sm-12 col-md-6 text-center">
             <h2 class="featurette-heading text-center">{{ feature.heading }}</h2>
             <p class="lead">{{ feature.description }}</p>
-            <p><a class="btn btn-dark-gray" href="{{ feature.buttonlink | url }}">Read more!</a></p>
+
+            {% if feature.buttontext %}
+            <p><a class="btn btn-dark-gray" href="{{ feature.buttonlink | url }}">{{ feature.buttontext }}</a></p>
+            {% endif %}
+
           </div>
           <div class="col-md-6">
             <img src="{{ feature.imageurl | url }}" alt="{{ feature.heading }}" />
