@@ -20,6 +20,9 @@ theme:
   name: null
   custom_dir: 'theme'
   language: en
+  main:
+      bgcolor: bg-white
+  site_icon: "/images/SmallLogo250x151.png"
   static_templates:
     - 404.html
     - 500.html
